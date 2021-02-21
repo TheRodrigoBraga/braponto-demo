@@ -9,6 +9,13 @@ gunicorn = "*"
 heroku = "*"
 
 [dev-packages]
+pytest-django = "*"
+pytest = "*"
+autopep8 = "*"
+black = "*"
 
 [requires]
 python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
