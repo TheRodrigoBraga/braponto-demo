@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'employees',
 ]
 
 MIDDLEWARE = [
@@ -49,7 +51,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'webbraponto.urls'
+ROOT_URLCONF = 'webbraponto.urls', 'employees.urls'
+
 
 TEMPLATES = [
     {
@@ -67,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'webbraponto.wsgi.application'
+WSGI_APPLICATION = 'webbraponto.wsgi.application', 'eployees.wsgi.application'
 
 
 # Database
