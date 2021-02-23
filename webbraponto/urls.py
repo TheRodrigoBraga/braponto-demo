@@ -6,13 +6,13 @@ from employees.api import viewsets as employeesviewsets
 
 route = routers.DefaultRouter()
 
-route.register(r'employees', employeesviewsets.EmployeesViewSet,
-               basename="Employees")
+
+route.register(r'employees', employeesviewsets.EmployeesViewSet, basename="Employees")
+
 
 from webbraponto.home_view import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
-    path('/api', include(route.urls)),
+    path('', include(route.urls)),
 ]
