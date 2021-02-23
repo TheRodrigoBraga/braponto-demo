@@ -6,7 +6,9 @@ from employees.api import viewsets as employeesviewsets
 
 route = routers.DefaultRouter()
 
+
 route.register(r'employees', employeesviewsets.EmployeesViewSet, basename="Employees")
+
 
 from webbraponto.home_view import home
 
