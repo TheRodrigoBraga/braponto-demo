@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'webbraponto.urls', 'employees.urls'
+ROOT_URLCONF = 'employees.urls'
 
 
 TEMPLATES = [
