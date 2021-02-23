@@ -51,7 +51,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'employees.urls',
+ROOT_URLCONF = 'webbraponto.urls',
 
 
 TEMPLATES = [
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'webbraponto.wsgi.application', 'employees.wsgi.application'
+WSGI_APPLICATION = 'webbraponto.wsgi.application'
 
 
 # Database
